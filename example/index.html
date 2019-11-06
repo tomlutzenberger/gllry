@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="Tom Lutzenberger">
+<title>gllry Examples</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/e41785cf65.css">
+<link rel="stylesheet" href="style.min.css">
+<link rel="stylesheet" href="../dist/gllry.min.css">
+
+</head>
+
+<body>
+<header>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <i class="fa fa-picture-o fa-fw mr-2"></i>
+        <strong>gllry</strong>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">This is gllry!</h1>
+      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc.
+                                 Make it short and sweet, but not too short so folks don’t simply skip over it
+                                 entirely.</p>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2>Simple image gllry</h2>
+      <p class="lead">Using the <code>.gllry</code> class</p>
+      <div class="row">
+
+        <div class="col col-md-4 gllry">
+          <img src="https://picsum.photos/id/1015/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+          <div class="gllry-full"><img src="https://picsum.photos/id/1015/1920/1080"></div>
+        </div>
+        <div class="col col-md-4 gllry">
+          <img src="https://picsum.photos/id/1016/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+          <div class="gllry-full"><img src="https://picsum.photos/id/1016/1920/1080"></div>
+        </div>
+        <div class="col col-md-4 gllry">
+          <img src="https://picsum.photos/id/1019/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+          <div class="gllry-full"><img src="https://picsum.photos/id/1019/1920/1080"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2>Overlay</h2>
+      <p class="lead">Using the additional <code>.gllry-overlay</code> class</p>
+      <div class="row">
+
+        <div class="col col-md-4 gllry gllry-overlay">
+          <img src="https://picsum.photos/id/1074/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+          <div class="gllry-full"><img src="https://picsum.photos/id/1074/1920/1080"></div>
+        </div>
+        <div class="col col-md-4 gllry gllry-overlay">
+          <img src="https://picsum.photos/id/1084/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+          <div class="gllry-full"><img src="https://picsum.photos/id/1084/1920/1080"></div>
+        </div>
+        <div class="col col-md-4 gllry gllry-overlay">
+          <img src="https://picsum.photos/id/237/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+          <div class="gllry-full"><img src="https://picsum.photos/id/237/1920/1080"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2>Traversable</h2>
+      <p class="lead">Set <code>tabindex</code> to greater than <code>-1</code> to traverse through gallery</p>
+      <div class="row">
+
+        <div class="col col-md-4 gllry gllry-overlay">
+          <img src="https://picsum.photos/id/24/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="101">
+          <div class="gllry-full"><img src="https://picsum.photos/id/24/1920/1080"></div>
+        </div>
+        <div class="col col-md-4 gllry gllry-overlay">
+          <img src="https://picsum.photos/id/248/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="102">
+          <div class="gllry-full"><img src="https://picsum.photos/id/248/1920/1080"></div>
+        </div>
+        <div class="col col-md-4 gllry gllry-overlay">
+          <img src="https://picsum.photos/id/250/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="103">
+          <div class="gllry-full"><img src="https://picsum.photos/id/250/1920/1080"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="bg-dark text-light pt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-md-12 text-center">
+        <p>
+          <a class="btn btn-sm btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftomlutzenberger.github.io%2Fgllry%2F" title="Share on Facebook" target="_blank">
+            <span class="fa fa-fw fa-lg fa-facebook" aria-hidden="true"></span>
+            <span class="hidden-xs">&nbsp;Share</span>
+          </a>&nbsp;<a class="btn btn-sm btn-twitter" href="https://twitter.com/share?text=gllry%20-%20Access%20your%20systems%20login%20with%20only%201%20click.&amp;url=https%3A%2F%2Ftomlutzenberger.github.io%2Fgllry%2F&amp;via=t0mlutzenberger&amp;hashtags=javascript%2Cbookmarklet" title="Post a tweet" target="_blank">
+          <span class="fa fa-fw fa-lg fa-twitter" aria-hidden="true"></span>
+          <span class="hidden-xs">&nbsp;Tweet</span>
+        </a>&nbsp;<a class="btn btn-sm btn-github" href="https://github.com/tomlutzenberger/gllry" title="Contribute on GitHub" target="_blank">
+          <span class="fa fa-fw fa-lg fa-github" aria-hidden="true"></span>
+          <span class="hidden-xs">&nbsp;Contribute</span>
+        </a>
+        </p>
+      </div>
+      <div class="col-6 col-md-12 text-center">
+        <p>Made
+           with&nbsp;<span class=""><span class="fa fa-fw fa-heart color-red" aria-hidden="true"></span><span class="sr-only">❤</span></span>
+        </p>
+        <p>© 2019 – A Project
+           by&nbsp;<a href="https://tomlutzenberger.de" title="Open tomlutzenberger.de" target="_blank">Tom
+                                                                                                        Lutzenberger</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>

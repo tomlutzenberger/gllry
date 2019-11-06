@@ -1,0 +1,43 @@
+$color-facebook: #3b5998;
+$color-twitter: #1da1f2;
+$color-github: #333;
+
+.color-red {
+  color: #e04;
+}
+
+.btn-facebook {
+  background: $color-facebook;
+  color: #fff;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: #fff;
+    color: $color-facebook;
+  }
+}
+
+.btn-twitter {
+  background: $color-twitter;
+  color: #fff;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: #fff;
+    color: $color-twitter;
+  }
+}
+
+.btn-github {
+  background: $color-github;
+  color: #fff;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: #fff;
+    color: $color-github;
+  }
+}
