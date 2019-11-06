@@ -15,7 +15,8 @@
     "sass:example": "node-sass src/example.scss example/style.min.css --output-style=compressed",
     "sass": "yarn sass:dev && yarn sass:prod && yarn sass:example",
     "lint:sass": "stylelint --syntax=scss src/*.scss",
-    "lint": "yarn lint:sass"
+    "lint": "yarn lint:sass",
+    "build": "yarn lint && yarn sass"
   },
   "devDependencies": {
     "node-sass": "^4.13.0",
