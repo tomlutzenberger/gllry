@@ -15,32 +15,26 @@
 </head>
 
 <body>
-<header>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container d-flex justify-content-between">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <i class="fa fa-picture-o fa-fw mr-2"></i>
-        <strong>gllry</strong>
-      </a>
-    </div>
+<nav class="navbar navbar-dark bg-dark shadow-sm">
+  <div class="container d-flex justify-content-center">
+    <a href="#" class="navbar-brand d-flex align-items-center"> <i class="fa fa-picture-o fa-fw mr-2"></i>
+      <strong>gllry</strong> </a>
+  </div>
+</nav>
+<header class="py-5">
+  <div class="container text-center text-light text-shadow py-5">
+    <h1 class="display-3">This is gllry!</h1>
+    <p class="lead mb-0">A css-only image gallery</p>
   </div>
 </header>
 
 <main role="main">
 
-  <section class="jumbotron text-center">
-    <div class="container">
-      <h1 class="jumbotron-heading">This is gllry!</h1>
-      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc.
-                                 Make it short and sweet, but not too short so folks don’t simply skip over it
-                                 entirely.</p>
-    </div>
-  </section>
 
   <section class="py-5 bg-light">
-    <div class="container text-center">
-      <h2>Simple image gllry</h2>
-      <p class="lead">Use the <code>.gllry</code> class</p>
+    <div class="container">
+      <h2 class="text-center">Simple image gllry</h2>
+      <p class="lead text-center">Use the <code>.gllry</code> class</p>
       <div class="row">
 
         <div class="col col-md-4 gllry">
@@ -57,13 +51,24 @@
         </div>
 
       </div>
+
+      <div class="bg-white border mt-4">
+        <pre><code>
+      &lt;div class=&quot;gllry&quot;&gt;
+        &lt;img src=&quot;https://picsum.photos/id/1015/640/480&quot; class=&quot;gllry-thumb&quot; tabindex=&quot;-1&quot;&gt;
+        &lt;div class=&quot;gllry-full&quot;&gt;
+          &lt;img src=&quot;https://picsum.photos/id/1015/1920/1080&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+      </div>
+
     </div>
   </section>
 
-  <section class="py-5 bg-light">
-    <div class="container text-center">
-      <h2>Overlay</h2>
-      <p class="lead">Use the <code>.gllry-overlay</code> class</p>
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center">Overlay</h2>
+      <p class="lead text-center">Use the <code>.gllry-overlay</code> class</p>
       <div class="row">
 
         <div class="col col-md-4 gllry-overlay">
@@ -80,13 +85,25 @@
         </div>
 
       </div>
+
+      <div class="bg-light border mt-4">
+        <pre><code>
+      &lt;div class=&quot;gllry-overlay&quot;&gt;
+        &lt;img src=&quot;https://picsum.photos/id/1074/640/480&quot; class=&quot;gllry-thumb&quot; tabindex=&quot;-1&quot;&gt;
+        &lt;div class=&quot;gllry-full&quot;&gt;
+          &lt;img src=&quot;https://picsum.photos/id/1074/1920/1080&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+      </div>
+
     </div>
   </section>
 
   <section class="py-5 bg-light">
-    <div class="container text-center">
-      <h2>Traversable</h2>
-      <p class="lead">Set <code>tabindex</code> to greater than <code>-1</code> to traverse through gallery</p>
+    <div class="container">
+      <h2 class="text-center">Traversable</h2>
+      <p class="lead text-center">Set <code>tabindex</code> to greater than <code>-1</code> to traverse through gallery
+      </p>
       <div class="row">
 
         <div class="col col-md-4 gllry-overlay">
@@ -103,6 +120,17 @@
         </div>
 
       </div>
+
+      <div class="bg-white border mt-4">
+        <pre><code>
+      &lt;div class=&quot;gllry&quot;&gt;
+        &lt;img src=&quot;https://picsum.photos/id/24/640/480&quot; class=&quot;gllry-thumb&quot; tabindex=&quot;101&quot;&gt;
+        &lt;div class=&quot;gllry-full&quot;&gt;
+          &lt;img src=&quot;https://picsum.photos/id/24/1920/1080&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+      </div>
+
     </div>
   </section>
 
@@ -117,21 +145,20 @@
             <span class="fa fa-fw fa-lg fa-facebook" aria-hidden="true"></span>
             <span class="hidden-xs">&nbsp;Share</span>
           </a>&nbsp;<a class="btn btn-sm btn-twitter" href="https://twitter.com/share?text=gllry%20-%20Access%20your%20systems%20login%20with%20only%201%20click.&amp;url=https%3A%2F%2Ftomlutzenberger.github.io%2Fgllry%2F&amp;via=t0mlutzenberger&amp;hashtags=javascript%2Cbookmarklet" title="Post a tweet" target="_blank">
-          <span class="fa fa-fw fa-lg fa-twitter" aria-hidden="true"></span>
-          <span class="hidden-xs">&nbsp;Tweet</span>
+          <span class="fa fa-fw fa-lg fa-twitter" aria-hidden="true"></span> <span class="hidden-xs">&nbsp;Tweet</span>
         </a>&nbsp;<a class="btn btn-sm btn-github" href="https://github.com/tomlutzenberger/gllry" title="Contribute on GitHub" target="_blank">
           <span class="fa fa-fw fa-lg fa-github" aria-hidden="true"></span>
-          <span class="hidden-xs">&nbsp;Contribute</span>
-        </a>
+          <span class="hidden-xs">&nbsp;Contribute</span> </a>
         </p>
       </div>
       <div class="col-6 col-md-12 text-center">
-        <p>Made
-           with&nbsp;<span class=""><span class="fa fa-fw fa-heart color-red" aria-hidden="true"></span><span class="sr-only">❤</span></span>
+        <p class="text-muted">
+          Made with&nbsp;
+          <span class=""><span class="fa fa-fw fa-heart color-red" aria-hidden="true"></span><span class="sr-only">❤</span></span>
         </p>
-        <p>© 2019 – A Project
-           by&nbsp;<a href="https://tomlutzenberger.de" title="Open tomlutzenberger.de" target="_blank">Tom
-                                                                                                        Lutzenberger</a>
+        <p class="text-muted">
+          © 2019 – A Project by&nbsp;
+          <a href="https://tomlutzenberger.de" class="text-light text-decoration-underline" title="Open tomlutzenberger.de" target="_blank">Tom Lutzenberger</a>
         </p>
       </div>
     </div>

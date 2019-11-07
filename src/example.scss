@@ -1,6 +1,25 @@
+$color-brand-from: #f12711;
+$color-brand-to: #f5af19;
+
 $color-facebook: #3b5998;
 $color-twitter: #1da1f2;
 $color-github: #333;
+
+header {
+  background: url("https://picsum.photos/id/307/1920/320") top center no-repeat;
+  height: 320px;
+}
+
+.navbar-brand {
+  background-image: linear-gradient(0deg, $color-brand-from, $color-brand-to);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-shadow {
+  text-shadow: #000 0 0 8px;
+}
 
 .color-red {
   color: #e04;
