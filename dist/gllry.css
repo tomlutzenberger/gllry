@@ -2,7 +2,8 @@
   background-color: #0008;
 }
 
-.gllry-overlay .gllry-full img {
+.gllry-overlay .gllry-full > img,
+.gllry-overlay .gllry-full > figure {
   box-shadow: 0 0 5em #000;
 }
 
@@ -22,8 +23,10 @@
   z-index: 10000;
 }
 
-.gllry .gllry-thumb + .gllry-full img,
-.gllry-overlay .gllry-thumb + .gllry-full img {
+.gllry .gllry-thumb + .gllry-full > img,
+.gllry .gllry-thumb + .gllry-full > figure,
+.gllry-overlay .gllry-thumb + .gllry-full > img,
+.gllry-overlay .gllry-thumb + .gllry-full > figure {
   cursor: zoom-out;
   left: 50%;
   max-height: 90vh;
@@ -31,6 +34,27 @@
   position: absolute;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
+}
+
+.gllry .gllry-thumb + .gllry-full > figure img,
+.gllry-overlay .gllry-thumb + .gllry-full > figure img {
+  max-height: inherit;
+  max-width: inherit;
+}
+
+.gllry .gllry-thumb + .gllry-full > figure figcaption,
+.gllry-overlay .gllry-thumb + .gllry-full > figure figcaption {
+  position: relative;
+  bottom: 10vh;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  left: 50%;
+  color: #fff;
+  transform: translateX(-50%);
+  background: #0008;
+  padding: 1em;
+  width: 100%;
 }
 
 .gllry .gllry-thumb:focus + .gllry-full,
