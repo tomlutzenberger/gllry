@@ -3,6 +3,30 @@
   border-collapse: separate;
 }
 
+.gllry-overlay .gllry-full button.gllry-close {
+  background-color: rgba(128, 0, 0, 0.5);
+  border: 0;
+  color: #fff;
+  font-size: 2em;
+  line-height: 1em;
+  min-height: 2em;
+  min-width: 2em;
+  padding: 0.5em;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 10001;
+}
+
+.gllry-overlay .gllry-full button.gllry-close:hover {
+  background-color: rgba(192, 0, 0, 0.5);
+}
+
+.gllry-overlay .gllry-full button.gllry-close:focus, .gllry-overlay .gllry-full button.gllry-close:active {
+  outline: 5px solid rgba(255, 255, 255, 0.5);
+}
+
 .gllry .gllry-thumb:hover,
 .gllry-overlay .gllry-thumb:hover {
   cursor: pointer;
@@ -20,6 +44,11 @@
   z-index: 10000;
 }
 
+.gllry .gllry-thumb + .gllry-full[tabindex] > :not(.gllry-close):hover,
+.gllry-overlay .gllry-thumb + .gllry-full[tabindex] > :not(.gllry-close):hover {
+  cursor: default;
+}
+
 .gllry .gllry-thumb + .gllry-full img,
 .gllry-overlay .gllry-thumb + .gllry-full img {
   box-shadow: 0 0 5em rgba(0, 0, 0, 0.5);
@@ -29,7 +58,7 @@
 .gllry .gllry-thumb + .gllry-full > figure,
 .gllry-overlay .gllry-thumb + .gllry-full > img,
 .gllry-overlay .gllry-thumb + .gllry-full > figure {
-  cursor: default;
+  cursor: pointer;
   max-height: 90vh;
   max-width: 90vw;
 }

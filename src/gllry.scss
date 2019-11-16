@@ -1,4 +1,7 @@
 $bg-overlay-color: rgba(0, 0, 0, 0.5);
+$closing-overlay-color: rgba(128, 0, 0, 0.5);
+$closing-focus-color: rgba(192, 0, 0, 0.5);
+$closing-focus-border-color: rgba(255, 255, 255, 0.5);
 $image-shadow-color: rgba(0, 0, 0, 0.5);
 $caption-overlay-color: rgba(0, 0, 0, 0.5);
 
@@ -6,6 +9,31 @@ $caption-overlay-color: rgba(0, 0, 0, 0.5);
   .gllry-full {
     box-shadow: 0 0 0 100vh $bg-overlay-color;
     border-collapse: separate; // IE9 Fix
+
+    button.gllry-close {
+      background-color: $closing-overlay-color;
+      border: 0;
+      color: #fff;
+      font-size: 2em;
+      line-height: 1em;
+      min-height: 2em;
+      min-width: 2em;
+      padding: 0.5em;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      z-index: 10001;
+
+      &:hover {
+        background-color: $closing-focus-color;
+      }
+
+      &:focus,
+      &:active {
+        outline: 5px solid $closing-focus-border-color;
+      }
+    }
   }
 }
 
@@ -26,13 +54,17 @@ $caption-overlay-color: rgba(0, 0, 0, 0.5);
       transform: translateX(-50%) translateY(-50%);
       z-index: 10000;
 
+      &[tabindex] > :not(.gllry-close):hover {
+        cursor: default;
+      }
+
       img {
         box-shadow: 0 0 5em $image-shadow-color;
       }
 
       & > img,
       & > figure {
-        cursor: default;
+        cursor: pointer;
         max-height: 90vh;
         max-width: 90vw;
       }

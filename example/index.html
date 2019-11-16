@@ -102,7 +102,8 @@
   <section class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center">Traversable</h2>
-      <p class="lead text-center">Set <code>tabindex</code> to greater than <code>-1</code> to traverse through gallery
+      <p class="lead text-center">
+        Set <code>tabindex</code> to greater than <code>-1</code> to traverse through gallery
       </p>
       <div class="row">
 
@@ -135,6 +136,54 @@
   </section>
 
   <section class="py-5">
+    <div class="container">
+      <h2 class="text-center">Prevent gllry from closing</h2>
+      <p class="lead text-center">
+        To prevent <code>.gllry-full</code> from closing, when the content is clicked, add <code>tabindex="-1"</code>.
+        <br>
+        Also add <code>button.gllry-close</code> inside to increase usability.
+      </p>
+      <div class="row">
+
+        <div class="col col-md-4 gllry-overlay">
+          <img src="https://picsum.photos/id/283/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+          <div class="gllry-full" tabindex="-1">
+            <img src="https://picsum.photos/id/283/1920/1080">
+            <button class="gllry-close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div>
+        <div class="col col-md-4 gllry-overlay">
+          <img src="https://picsum.photos/id/299/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+          <div class="gllry-full" tabindex="-1">
+            <img src="https://picsum.photos/id/299/1920/1080">
+            <button class="gllry-close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div>
+        <div class="col col-md-4 gllry-overlay">
+          <img src="https://picsum.photos/id/308/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+          <div class="gllry-full" tabindex="-1">
+            <img src="https://picsum.photos/id/308/1920/1080">
+            <button class="gllry-close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bg-light border mt-4">
+        <pre><code>
+      &lt;div class=&quot;gllry&quot;&gt;
+        &lt;img src=&quot;https://picsum.photos/id/299/640/480&quot; class=&quot;gllry-thumb&quot; tabindex=&quot;-1&quot;&gt;
+        &lt;div class=&quot;gllry-full gllry-close&quot; tabindex=&quot;-1&quot;&gt;
+          &lt;img src=&quot;https://picsum.photos/id/299/1920/1080&quot;&gt;
+          &lt;button class=&quot;gllry-close&quot;&gt;&amp;times;&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center">Figures with captions</h2>
       <p class="lead text-center">Use <code>&lt;figure&gt;</code> instead of <code>&lt;img&gt;</code></p>
@@ -170,7 +219,7 @@
 
       </div>
 
-      <div class="bg-light border mt-4">
+      <div class="bg-white border mt-4">
         <pre><code>
       &lt;div class=&quot;gllry&quot;&gt;
         &lt;img src=&quot;https://picsum.photos/id/287/640/480&quot; class=&quot;gllry-thumb&quot; tabindex=&quot;-1&quot;&gt;
