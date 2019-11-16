@@ -63,6 +63,11 @@
   max-width: 90vw;
 }
 
+.gllry .gllry-thumb + .gllry-full > figure,
+.gllry-overlay .gllry-thumb + .gllry-full > figure {
+  margin: 0;
+}
+
 .gllry .gllry-thumb + .gllry-full > figure img,
 .gllry-overlay .gllry-thumb + .gllry-full > figure img {
   max-height: inherit;
@@ -78,7 +83,7 @@
   left: 50%;
   margin: 0 auto;
   padding: 1em;
-  position: relative;
+  position: absolute;
   text-align: center;
   transform: translateX(-50%);
   width: 100%;

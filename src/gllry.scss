@@ -70,6 +70,8 @@ $caption-overlay-color: rgba(0, 0, 0, 0.5);
       }
 
       & > figure {
+        margin: 0;
+
         img {
           max-height: inherit;
           max-width: inherit;
@@ -83,7 +85,7 @@ $caption-overlay-color: rgba(0, 0, 0, 0.5);
           left: 50%;
           margin: 0 auto;
           padding: 1em;
-          position: relative;
+          position: absolute;
           text-align: center;
           transform: translateX(-50%);
           width: 100%;
