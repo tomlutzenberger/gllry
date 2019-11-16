@@ -12,8 +12,8 @@
   "scripts": {
     "sass:dev": "node-sass src/gllry.scss dist/gllry.css --output-style=expanded",
     "sass:prod": "node-sass src/gllry.scss dist/gllry.min.css --output-style=compressed",
-    "sass:example": "node-sass src/example.scss example/style.min.css --output-style=compressed",
-    "sass": "yarn sass:dev && yarn sass:prod && yarn sass:example",
+    "sass:docs": "node-sass src/docs.scss docs/style.min.css --output-style=compressed",
+    "sass": "yarn sass:dev && yarn sass:prod && yarn sass:docs",
     "lint:sass": "stylelint --syntax=scss src/*.scss",
     "lint": "yarn lint:sass",
     "build": "yarn lint && yarn sass"
