@@ -1,12 +1,11 @@
+$bg-overlay-color: rgba(0, 0, 0, 0.5);
+$image-shadow-color: rgba(0, 0, 0, 0.5);
+$caption-overlay-color: rgba(0, 0, 0, 0.5);
 
 .gllry-overlay {
   .gllry-full {
-    background-color: #0008;
-
-    & > img,
-    & > figure {
-      box-shadow: 0 0 5em #000;
-    }
+    box-shadow: 0 0 0 100vh $bg-overlay-color;
+    border-collapse: separate; // IE9 Fix
   }
 }
 
@@ -14,27 +13,28 @@
 .gllry-overlay {
   .gllry-thumb {
     &:hover {
-      cursor: zoom-in;
+      cursor: pointer;
     }
 
     & + .gllry-full {
       display: none;
-      height: 100vh;
-      left: 0;
+      left: 50%;
+      max-height: 90vh;
+      max-width: 90vw;
       position: fixed;
-      top: 0;
-      width: 100vw;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
       z-index: 10000;
+
+      img {
+        box-shadow: 0 0 5em $image-shadow-color;
+      }
 
       & > img,
       & > figure {
-        cursor: zoom-out;
-        left: 50%;
+        cursor: default;
         max-height: 90vh;
         max-width: 90vw;
-        position: absolute;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
       }
 
       & > figure {
@@ -44,7 +44,7 @@
         }
 
         figcaption {
-          background: #0008;
+          background: $caption-overlay-color;
           bottom: 10vh;
           color: #fff;
           display: block;
