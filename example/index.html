@@ -24,7 +24,7 @@
 <header class="py-5">
   <div class="container text-center text-light text-shadow py-5">
     <h1 class="display-3">This is gllry!</h1>
-    <p class="lead mb-0">A css-only image gallery</p>
+    <p class="lead mb-0">A hand-crafted css-only image gallery</p>
   </div>
 </header>
 
@@ -34,29 +34,29 @@
   <section class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center">Simple image gllry</h2>
-      <p class="lead text-center">Use the <code>.gllry</code> class</p>
+      <p class="lead text-center">Use the <code>.gllry-*</code> classes</p>
       <div class="row">
 
-        <div class="col col-md-4 gllry">
-          <img src="https://picsum.photos/id/1015/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
-          <div class="gllry-full"><img src="https://picsum.photos/id/1015/1920/1080"></div>
+        <div class="col-12 col-md-4 mb-3 gllry">
+          <img src="https://picsum.photos/id/1015/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1" alt="">
+          <div class="gllry-full"><img src="https://picsum.photos/id/1015/1920/1080" alt=""></div>
         </div>
-        <div class="col col-md-4 gllry">
-          <img src="https://picsum.photos/id/1016/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
-          <div class="gllry-full"><img src="https://picsum.photos/id/1016/1920/1080"></div>
+        <div class="col-6 col-md-4 mb-3 gllry">
+          <img src="https://picsum.photos/id/1016/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1" alt="">
+          <div class="gllry-full"><img src="https://picsum.photos/id/1016/1920/1080" alt=""></div>
         </div>
-        <div class="col col-md-4 gllry">
-          <img src="https://picsum.photos/id/1019/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
-          <div class="gllry-full"><img src="https://picsum.photos/id/1019/1920/1080"></div>
+        <div class="col-6 col-md-4 mb-3 gllry">
+          <img src="https://picsum.photos/id/1019/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1" alt="">
+          <div class="gllry-full"><img src="https://picsum.photos/id/1019/1920/1080" alt=""></div>
         </div>
 
       </div>
 
       <div class="bg-white border mt-4">
         <pre><code>
-      &lt;div class=&quot;gllry&quot;&gt;
-        &lt;img src=&quot;https://picsum.photos/id/1015/640/480&quot; class=&quot;gllry-thumb&quot; tabindex=&quot;-1&quot;&gt;
-        &lt;div class=&quot;gllry-full&quot;&gt;
+      &lt;div class=&quot;<mark>gllry</mark>&quot;&gt;
+        &lt;img src=&quot;https://picsum.photos/id/1015/640/480&quot; class=&quot;<mark>gllry-thumb</mark>&quot; tabindex=&quot;-1&quot;&gt;
+          &lt;div class=&quot;<mark>gllry-full</mark>&quot;&gt;
           &lt;img src=&quot;https://picsum.photos/id/1015/1920/1080&quot;&gt;
         &lt;/div&gt;
       &lt;/div&gt;</code></pre>
@@ -68,27 +68,27 @@
   <section class="py-5">
     <div class="container">
       <h2 class="text-center">Overlay</h2>
-      <p class="lead text-center">Use the <code>.gllry-overlay</code> class</p>
+      <p class="lead text-center">Use the <code>.gllry-overlay</code> class instead to add a background overlay</p>
       <div class="row">
 
-        <div class="col col-md-4 gllry-overlay">
-          <img src="https://picsum.photos/id/1074/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
-          <div class="gllry-full"><img src="https://picsum.photos/id/1074/1920/1080"></div>
+        <div class="col-12 col-md-4 mb-3 gllry-overlay">
+          <img src="https://picsum.photos/id/1074/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1" alt="">
+          <div class="gllry-full"><img src="https://picsum.photos/id/1074/1920/1080" alt=""></div>
         </div>
-        <div class="col col-md-4 gllry-overlay">
-          <img src="https://picsum.photos/id/1084/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
-          <div class="gllry-full"><img src="https://picsum.photos/id/1084/1920/1080"></div>
+        <div class="col-6 col-md-4 mb-3 gllry-overlay">
+          <img src="https://picsum.photos/id/1084/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1" alt="">
+          <div class="gllry-full"><img src="https://picsum.photos/id/1084/1920/1080" alt=""></div>
         </div>
-        <div class="col col-md-4 gllry-overlay">
-          <img src="https://picsum.photos/id/237/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
-          <div class="gllry-full"><img src="https://picsum.photos/id/237/1920/1080"></div>
+        <div class="col-6 col-md-4 mb-3 gllry-overlay">
+          <img src="https://picsum.photos/id/237/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1" alt="">
+          <div class="gllry-full"><img src="https://picsum.photos/id/237/1920/1080" alt=""></div>
         </div>
 
       </div>
 
       <div class="bg-light border mt-4">
         <pre><code>
-      &lt;div class=&quot;gllry-overlay&quot;&gt;
+      &lt;div class=&quot;<mark>gllry-overlay</mark>&quot;&gt;
         &lt;img src=&quot;https://picsum.photos/id/1074/640/480&quot; class=&quot;gllry-thumb&quot; tabindex=&quot;-1&quot;&gt;
         &lt;div class=&quot;gllry-full&quot;&gt;
           &lt;img src=&quot;https://picsum.photos/id/1074/1920/1080&quot;&gt;
@@ -103,21 +103,21 @@
     <div class="container">
       <h2 class="text-center">Traversable</h2>
       <p class="lead text-center">
-        Set <code>tabindex</code> to greater than <code>-1</code> to traverse through gallery
+        Set <code>tabindex</code> to greater than <code>-1</code> to traverse through gallery with <kbd>tab</kbd>
       </p>
       <div class="row">
 
-        <div class="col col-md-4 gllry-overlay">
-          <img src="https://picsum.photos/id/24/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="101">
-          <div class="gllry-full"><img src="https://picsum.photos/id/24/1920/1080"></div>
+        <div class="col-12 col-md-4 mb-3 gllry-overlay">
+          <img src="https://picsum.photos/id/24/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="101" alt="">
+          <div class="gllry-full"><img src="https://picsum.photos/id/24/1920/1080" alt=""></div>
         </div>
-        <div class="col col-md-4 gllry-overlay">
-          <img src="https://picsum.photos/id/248/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="102">
-          <div class="gllry-full"><img src="https://picsum.photos/id/248/1920/1080"></div>
+        <div class="col-6 col-md-4 mb-3 gllry-overlay">
+          <img src="https://picsum.photos/id/248/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="102" alt="">
+          <div class="gllry-full"><img src="https://picsum.photos/id/248/1920/1080" alt=""></div>
         </div>
-        <div class="col col-md-4 gllry-overlay">
-          <img src="https://picsum.photos/id/250/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="103">
-          <div class="gllry-full"><img src="https://picsum.photos/id/250/1920/1080"></div>
+        <div class="col-6 col-md-4 mb-3 gllry-overlay">
+          <img src="https://picsum.photos/id/250/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="103" alt="">
+          <div class="gllry-full"><img src="https://picsum.photos/id/250/1920/1080" alt=""></div>
         </div>
 
       </div>
@@ -125,7 +125,7 @@
       <div class="bg-white border mt-4">
         <pre><code>
       &lt;div class=&quot;gllry&quot;&gt;
-        &lt;img src=&quot;https://picsum.photos/id/24/640/480&quot; class=&quot;gllry-thumb&quot; tabindex=&quot;101&quot;&gt;
+        &lt;img src=&quot;https://picsum.photos/id/24/640/480&quot; class=&quot;gllry-thumb&quot; <mark>tabindex=&quot;101&quot;</mark>&gt;
         &lt;div class=&quot;gllry-full&quot;&gt;
           &lt;img src=&quot;https://picsum.photos/id/24/1920/1080&quot;&gt;
         &lt;/div&gt;
@@ -140,29 +140,28 @@
       <h2 class="text-center">Prevent gllry from closing</h2>
       <p class="lead text-center">
         To prevent <code>.gllry-full</code> from closing, when the content is clicked, add <code>tabindex="-1"</code>.
-        <br>
-        Also add <code>button.gllry-close</code> inside to increase usability.
+        <br> Also add <code>button.gllry-close</code> inside to increase usability.
       </p>
       <div class="row">
 
-        <div class="col col-md-4 gllry-overlay">
-          <img src="https://picsum.photos/id/283/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+        <div class="col-12 col-md-4 mb-3 gllry-overlay">
+          <img src="https://picsum.photos/id/283/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1" alt="">
           <div class="gllry-full" tabindex="-1">
-            <img src="https://picsum.photos/id/283/1920/1080">
+            <img src="https://picsum.photos/id/283/1920/1080" alt="">
             <button class="gllry-close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
         </div>
-        <div class="col col-md-4 gllry-overlay">
-          <img src="https://picsum.photos/id/299/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+        <div class="col-6 col-md-4 mb-3 gllry-overlay">
+          <img src="https://picsum.photos/id/299/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1" alt="">
           <div class="gllry-full" tabindex="-1">
-            <img src="https://picsum.photos/id/299/1920/1080">
+            <img src="https://picsum.photos/id/299/1920/1080" alt="">
             <button class="gllry-close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
         </div>
-        <div class="col col-md-4 gllry-overlay">
-          <img src="https://picsum.photos/id/308/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+        <div class="col-6 col-md-4 mb-3 gllry-overlay">
+          <img src="https://picsum.photos/id/308/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1" alt="">
           <div class="gllry-full" tabindex="-1">
-            <img src="https://picsum.photos/id/308/1920/1080">
+            <img src="https://picsum.photos/id/308/1920/1080" alt="">
             <button class="gllry-close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           </div>
         </div>
@@ -173,9 +172,9 @@
         <pre><code>
       &lt;div class=&quot;gllry&quot;&gt;
         &lt;img src=&quot;https://picsum.photos/id/299/640/480&quot; class=&quot;gllry-thumb&quot; tabindex=&quot;-1&quot;&gt;
-        &lt;div class=&quot;gllry-full gllry-close&quot; tabindex=&quot;-1&quot;&gt;
+        &lt;div class=&quot;gllry-full gllry-close&quot; <mark>tabindex=&quot;-1&quot;</mark>&gt;
           &lt;img src=&quot;https://picsum.photos/id/299/1920/1080&quot;&gt;
-          &lt;button class=&quot;gllry-close&quot;&gt;&amp;times;&lt;/button&gt;
+          <mark>&lt;button class=&quot;gllry-close&quot;&gt;&amp;times;&lt;/button&gt;</mark>
         &lt;/div&gt;
       &lt;/div&gt;</code></pre>
       </div>
@@ -186,32 +185,32 @@
   <section class="py-5 bg-light">
     <div class="container">
       <h2 class="text-center">Figures with captions</h2>
-      <p class="lead text-center">Use <code>&lt;figure&gt;</code> instead of <code>&lt;img&gt;</code></p>
+      <p class="lead text-center">Use <code>&lt;figure&gt;</code> instead of plain <code>&lt;img&gt;</code></p>
       <div class="row">
 
-        <div class="col col-md-4 gllry-overlay">
-          <img src="https://picsum.photos/id/287/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+        <div class="col-12 col-md-4 mb-3 gllry-overlay">
+          <img src="https://picsum.photos/id/287/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1" alt="">
           <div class="gllry-full">
             <figure>
-              <img src="https://picsum.photos/id/287/1920/1080">
+              <img src="https://picsum.photos/id/287/1920/1080" alt="">
               <figcaption>Lorem ipsum</figcaption>
             </figure>
           </div>
         </div>
-        <div class="col col-md-4 gllry-overlay">
-          <img src="https://picsum.photos/id/294/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+        <div class="col-6 col-md-4 mb-3 gllry-overlay">
+          <img src="https://picsum.photos/id/294/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1" alt="">
           <div class="gllry-full">
             <figure>
-              <img src="https://picsum.photos/id/294/1920/1080">
+              <img src="https://picsum.photos/id/294/1920/1080" alt="">
               <figcaption>Lorem ipsum</figcaption>
             </figure>
           </div>
         </div>
-        <div class="col col-md-4 gllry-overlay">
-          <img src="https://picsum.photos/id/296/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1">
+        <div class="col-6 col-md-4 mb-3 gllry-overlay">
+          <img src="https://picsum.photos/id/296/640/480" class="img-fluid img-thumbnail gllry-thumb" tabindex="-1" alt="">
           <div class="gllry-full">
             <figure>
-              <img src="https://picsum.photos/id/296/1920/1080">
+              <img src="https://picsum.photos/id/296/1920/1080" alt="">
               <figcaption>Lorem ipsum</figcaption>
             </figure>
           </div>
@@ -224,9 +223,9 @@
       &lt;div class=&quot;gllry&quot;&gt;
         &lt;img src=&quot;https://picsum.photos/id/287/640/480&quot; class=&quot;gllry-thumb&quot; tabindex=&quot;-1&quot;&gt;
         &lt;div class=&quot;gllry-full&quot;&gt;
-          &lt;figure&gt;
+          <mark>&lt;figure&gt;</mark>
             &lt;img src=&quot;https://picsum.photos/id/287/1920/1080&quot;&gt;
-            &lt;figcaption&gt;Lorem ipsum&lt;/figcaption&gt;
+            <mark>&lt;figcaption&gt;</mark>Lorem ipsum&lt;/figcaption&gt;
           &lt;/figure&gt;
         &lt;/div&gt;
       &lt;/div&gt;</code></pre>
@@ -242,12 +241,12 @@
     <div class="row">
       <div class="col-6 col-md-12 text-center">
         <p>
-          <a class="btn btn-sm btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftomlutzenberger.github.io%2Fgllry%2F" title="Share on Facebook" target="_blank">
+          <a class="btn btn-sm btn-facebook mb-2" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftomlutzenberger.github.io%2Fgllry%2F" title="Share on Facebook" target="_blank">
             <span class="fa fa-fw fa-lg fa-facebook" aria-hidden="true"></span>
             <span class="hidden-xs">&nbsp;Share</span>
-          </a>&nbsp;<a class="btn btn-sm btn-twitter" href="https://twitter.com/share?text=gllry%20-%20Access%20your%20systems%20login%20with%20only%201%20click.&amp;url=https%3A%2F%2Ftomlutzenberger.github.io%2Fgllry%2F&amp;via=t0mlutzenberger&amp;hashtags=javascript%2Cbookmarklet" title="Post a tweet" target="_blank">
+          </a>&nbsp;<a class="btn btn-sm btn-twitter mb-2" href="https://twitter.com/share?text=gllry%20-%20Access%20your%20systems%20login%20with%20only%201%20click.&amp;url=https%3A%2F%2Ftomlutzenberger.github.io%2Fgllry%2F&amp;via=t0mlutzenberger&amp;hashtags=javascript%2Cbookmarklet" title="Post a tweet" target="_blank">
           <span class="fa fa-fw fa-lg fa-twitter" aria-hidden="true"></span> <span class="hidden-xs">&nbsp;Tweet</span>
-        </a>&nbsp;<a class="btn btn-sm btn-github" href="https://github.com/tomlutzenberger/gllry" title="Contribute on GitHub" target="_blank">
+        </a>&nbsp;<a class="btn btn-sm btn-github mb-2" href="https://github.com/tomlutzenberger/gllry" title="Contribute on GitHub" target="_blank">
           <span class="fa fa-fw fa-lg fa-github" aria-hidden="true"></span>
           <span class="hidden-xs">&nbsp;Contribute</span> </a>
         </p>
@@ -265,4 +264,5 @@
     </div>
   </div>
 </footer>
+</body>
 </html>

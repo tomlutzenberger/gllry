@@ -1,5 +1,6 @@
-$color-brand-from: #f12711;
-$color-brand-to: #f5af19;
+$color-brand-from: rgb(241, 39, 17); // #f12711
+$color-brand-to: rgb(245, 175, 25); // #f5af19
+$color-mark: rgba(255, 224, 0, 0.5);
 
 $color-facebook: #3b5998;
 $color-twitter: #1da1f2;
@@ -8,6 +9,11 @@ $color-github: #333;
 header {
   background: url("https://picsum.photos/id/307/1920/320") top center no-repeat;
   height: 320px;
+}
+
+mark {
+  background-color: $color-mark;
+  border-radius: 5px;
 }
 
 .navbar-brand {
