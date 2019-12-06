@@ -13,12 +13,14 @@
     "sass:dev": "node-sass src/gllry.scss dist/gllry.css --output-style=expanded",
     "sass:prod": "node-sass src/gllry.scss dist/gllry.min.css --output-style=compressed",
     "sass:docs": "node-sass src/docs.scss docs/style.min.css --output-style=compressed",
-    "sass": "yarn sass:dev && yarn sass:prod && yarn sass:docs",
+    "sass": "yarn sass:dev && yarn sass:prod && yarn sass:docs && copy:dist_to_docs",
+    "copy:dist_to_docs": "cpy dist/gllry.min.css docs",
     "lint:sass": "stylelint --syntax=scss src/*.scss",
     "lint": "yarn lint:sass",
     "build": "yarn lint && yarn sass"
   },
   "devDependencies": {
+    "cpy-cli": "^3.0.0",
     "node-sass": "^4.13.0",
     "stylelint": "^11.1.1",
     "stylelint-config-standard": "^19.0.0"
